@@ -12,8 +12,11 @@ int main() // la variable principal del programa de inicializacion
 
     printf("ingrese el valor para columnas: "); // se solicita al usuario ingresar el numero de columnas
     scanf("%d", &columna);                            // se lee los datos ingresados por el usuario
+    columna = fila;
 
-    int matrix[fila][columna];  // se define las variables con el numero de espacios ingresados por el usuario de filas y columnas.
+    int matrixA[fila][columna];  // se define las variables con el numero de espacios ingresados por el usuario de filas y columnas.
+    int matrixB[fila][columna]; // se define las variables de la matriz B con el numero de espacios ingresados por el usuario.
+    int matrixS[fila][columna]; // se define las variables de la matriz suma.
     srand(time(NULL)); // se crea la funcion para numeros randoms
 
     printf("---Esta es la Matriz A--- \n");
@@ -23,8 +26,20 @@ int main() // la variable principal del programa de inicializacion
         printf("\n");               // se coloca para separa las filas
         for (int j = 0; j < columna; j++) // Se crea en segundo for para la matriz original de columnas
         {
-            matrix[i][j] = rand() % 100 + 1; // Se define que la matriz se ponga el rango de numeros random que se solicitan en cada cuadro de la matriz
-            printf("%d \t", matrix[i][j]);   // se inprimer la matriz con numeros random
+            matrixA[i][j] = rand() % 100 + 1; // Se define que la matriz se ponga el rango de numeros random que se solicitan en cada cuadro de la matriz
+            printf("%d \t", matrixA[i][j]);   // se inprimer la matriz con numeros random
+        }
+    }
+
+        printf("---Esta es la Matriz B--- \n");
+
+    for (int i = 0; i < fila; i++) // se crea el primerfor para la matriz original de las filas
+    {
+        printf("\n");               // se coloca para separa las filas
+        for (int j = 0; j < columna; j++) // Se crea en segundo for para la matriz original de columnas
+        {
+            matrixB[i][j] = rand() % 100 + 1; // Se define que la matriz se ponga el rango de numeros random que se solicitan en cada cuadro de la matriz
+            printf("%d \t", matrixB[i][j]);   // se inprimer la matriz con numeros random
         }
     }
 
