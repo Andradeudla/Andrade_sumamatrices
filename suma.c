@@ -19,7 +19,7 @@ int main() // la variable principal del programa de inicializacion
     int matrixS[fila][columna]; // se define las variables de la matriz suma.
     srand(time(NULL)); // se crea la funcion para numeros randoms
 
-    printf("---Esta es la Matriz A--- \n");
+    printf("---Esta es la Matriz A---");
 
     for (int i = 0; i < fila; i++) // se crea el primerfor para la matriz original de las filas
     {
@@ -31,7 +31,8 @@ int main() // la variable principal del programa de inicializacion
         }
     }
 
-        printf("---Esta es la Matriz B--- \n");
+        printf("\n");
+        printf("---Esta es la Matriz B---");
 
     for (int i = 0; i < fila; i++) // se crea el primerfor para la matriz original de las filas
     {
@@ -42,6 +43,8 @@ int main() // la variable principal del programa de inicializacion
             printf("%d \t", matrixB[i][j]);   // se inprimer la matriz con numeros random
         }
     }
+
+    printf("\n");
 
     return 0;
 }
