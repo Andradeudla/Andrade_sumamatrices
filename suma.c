@@ -12,7 +12,6 @@ int main() // la variable principal del programa de inicializacion
 
     printf("ingrese el valor para columnas: "); // se solicita al usuario ingresar el numero de columnas
     scanf("%d", &columna);                            // se lee los datos ingresados por el usuario
-    columna = fila;
 
     int matrixA[fila][columna];  // se define las variables con el numero de espacios ingresados por el usuario de filas y columnas.
     int matrixB[fila][columna]; // se define las variables de la matriz B con el numero de espacios ingresados por el usuario.
