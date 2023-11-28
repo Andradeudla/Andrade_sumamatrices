@@ -45,6 +45,16 @@ int main() // la variable principal del programa de inicializacion
     }
 
     printf("\n");
+    printf("---Esta es la Matriz S---");
+    for (int i = 0; i < fila; i++) // se crea el primer for para la matriz suna.
+    {
+        printf("\n");
+        for (int j = 0; j < columna; j++) // se crea el segundor for para la matriz columna.
+        {
+            matrixS[i][j] = matrixA[i][j] + matrixB[i][j];// se realiza el operador para la suma de las matrices
+            printf("%d \t", matrixS[i][j]);// se inprime la matriz suma.
+        }
+    }
 
     return 0;
 }
